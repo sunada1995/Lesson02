@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head>
+<meta charset="UTF-8">
+<title>Search title here</title>
+</head>
+<body>
+
+<p>検索する社員IDと社員名を入力してください</p><br>
+
+
+ <span th:text="${message}"></span>
+
+<form th:action="@{/search}" th:method="post">
+	
+	 社員ID<input type="text" name="shainId">社員名<input type="text" name="shainName"> <button type="submit">検索</button>
+	 
+	
+	 <table>
+		 
+		 <tr>
+			 
+			 <th></th>
+			 
+		 </tr>
+		 
+	 </table>
+</form>
+
+
+</body>
+</html>
